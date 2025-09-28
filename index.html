@@ -1,0 +1,1420 @@
+<!doctype html>
+<html lang="en" class="bg-white dark:bg-gray-950 scheme-light dark:scheme-dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./src/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Portfolio - Naufal Najmi Kardiansyah</title>
+  <style>
+    html, body {
+        overflow-x: hidden;
+    }
+  </style>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="antialiased text-gray-900 dark:text-gray-100">
+
+<!-- Navbar -->
+<header class="fixed top-0 left-0 w-full bg-white/80 dark:bg-gray-950/80 backdrop-blur-md shadow-sm z-50">
+  <div class="container mx-auto flex items-center justify-between py-4 px-6">
+    <!-- Logo / Brand -->
+    <a href="#" class="text-shadow-2 font-bold text-blue-400 dark:text-blue-300">
+      Naufal Najmi Kardiansyah
+    </a>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8">
+      <a href="#hero" class="text-gray-700 dark:text-gray-200 hover:text-blue-400 transition">Home</a>
+      <a href="#about" class="text-gray-700 dark:text-gray-200 hover:text-blue-400 transition">About</a>
+      <a href="#projects" class="text-gray-700 dark:text-gray-200 hover:text-blue-400 transition">Projects</a>
+      <a href="#services" class="text-gray-700 dark:text-gray-200 hover:text-blue-400 transition">Services</a>
+      <a href="#certificates" class="text-gray-700 dark:text-gray-200 hover:text-blue-400 transition">Certificates</a>
+      <a href="#techstack" class="text-gray-700 dark:text-gray-200 hover:text-blue-400 transition">Tech Stack</a>
+      <a href="#contact" class="text-gray-700 dark:text-gray-200 hover:text-blue-400 transition">Contact</a>
+    </nav>
+
+    <!-- Mobile Hamburger -->
+    <button id="menu-btn" class="md:hidden text-gray-700 dark:text-gray-200 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden flex-col space-y-4 px-6 pb-4">
+    <a href="#hero" class="block text-gray-700 dark:text-gray-200 hover:text-blue-400 transition">Home</a>
+    <a href="#about" class="block text-gray-700 dark:text-gray-200 hover:text-blue-400 transition">About</a>
+    <a href="#projects" class="block text-gray-700 dark:text-gray-200 hover:text-blue-400 transition">Projects</a>
+    <a href="#services" class="block text-gray-700 dark:text-gray-200 hover:text-blue-400 transition">Services</a>
+    <a href="#certificates" class="block text-gray-700 dark:text-gray-200 hover:text-blue-400 transition">Certificates</a>
+    <a href="#techstack" class="block text-gray-700 dark:text-gray-200 hover:text-blue-400 transition">Tech Stack</a>
+    <a href="#contact" class="block text-gray-700 dark:text-gray-200 hover:text-blue-400 transition">Contact</a>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<!-- bg efek parallax -->
+<section id="hero"
+  class="pt-36 pb-20 
+         bg-gradient-to-br from-blue-50 via-white to-purple-50 
+         dark:from-gray-900 dark:via-gray-800 dark:to-blue-900">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-wrap items-center">
+      
+      <!-- Text Column -->
+      <div class="w-full lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0" data-aos="fade-right">
+        <h1 class="text-4xl font-bold mb-4 text-blue-400">
+         Welcome to My Portfolio
+        </h1>
+        <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+          I'm Naufal Najmi Kardiansyah, a passionate web developer and AI enthusiast. Explore my projects and services!
+        </p>
+        <a href="#about" 
+          class="inline-block bg-blue-400 text-white px-6 py-3 rounded-lg hover:bg-blue-500 transition">
+          About Me
+        </a>
+      </div>
+
+      <!-- Image Column with Circle Accent -->
+      <div class="w-full lg:w-1/2 flex justify-center lg:justify-end relative" data-aos="fade-left">
+        <!-- Circle Accent -->
+        <div class="absolute w-72 h-72 bg-blue-300 rounded-full top-1/4 -translate-y-1/4 right-1/2 -translate-x-1/2 -z-10"></div>
+        <!-- Profile Image tidak terpotong -->
+        <div class="relative z-10">
+          <img src="pictures/DSC02177.png" 
+               alt="Profile Image" 
+               class="rounded-2xl shadow-lg w-80 object-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-white dark:bg-gray-950">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-12">
+      
+      <!-- Photo Card -->
+      <div class="w-full md:w-1/2 flex justify-center md:justify-start" data-aos="fade-right">
+        <div class="relative">
+          <!-- Circle Accent -->
+          <div class="absolute -top-8 -right-25 w-64 h-64 bg-blue-300 rounded-full -z-10"></div>
+          <!-- Photo -->
+          <img src="pictures/nau1.jpeg" 
+               alt="About Me Photo"
+               class="rounded-2xl shadow-lg w-80 object-cover">
+        </div>
+      </div>
+
+      <!-- Text Column -->
+      <div class="w-full md:w-1/2" data-aos="fade-left">
+        <h2 class="text-3xl font-bold mb-6 text-blue-400 dark:text-gray-100">
+          About Me
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+          Hello! My name is <span class="font-semibold text-blue-400">Naufal Najmi Kardiansyah</span>. 
+          I am passionate about technology, web development, and machine learning. 
+          With a strong interest in building modern applications, 
+          I love creating solutions that are impactful, elegant, and user-friendly.
+        </p>
+        <p class="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+          In this portfolio, you’ll find some of my projects that highlight my journey 
+          in programming, design, and AI. Let’s explore and connect!
+        </p>
+        <a href="#projects" 
+           class="inline-block bg-blue-400 text-white px-6 py-3 rounded-lg hover:bg-blue-500 transition">
+          View My Projects
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-gray-50 dark:bg-gray-900">
+  <div class="container mx-auto px-6">
+    <!-- Section Title -->
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-blue-400 dark:text-gray-100 mb-4">
+        My Projects
+      </h2>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        Here are some of my favorite projects that showcase my skills in web development, AI, and design.
+      </p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg overflow-hidden group 
+                  hover:shadow-xl transform transition duration-300 hover:scale-105 relative" data-aos="zoom-in">
+        <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-200 dark:bg-blue-300 rounded-full blur-2xl opacity-40 -z-10"></div>
+        <img src="pictures/hybrid_recomendation.png" alt="Project 1" 
+            class="w-full h-48 object-cover transition duration-300 group-hover:scale-110">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Hybrid Recommendation System</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            AI-powered recommendation engine combining collaborative filtering and content-based methods.
+          </p>
+
+          <!-- Tech Stack Tags -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" 
+                  class="w-5 h-5" alt="Python">
+              Python
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" 
+                  class="w-5 h-5" alt="PyTorch">
+              PyTorch
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" 
+                  class="w-5 h-5" alt="Pandas">
+              Pandas
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" 
+                  class="w-5 h-5" alt="Streamlit">
+              Streamlit
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.prod.website-files.com/65264f6bf54e751c3a776db1/66d86935aaeb8c0b9fa1bde7_scikit-learn.png" 
+                  class="w-5 h-5" alt="Scikit-learn">
+              Scikit-learn
+            </span>
+        </div>
+          <button
+              class="open-modal-btn inline-block text-blue-400 hover:text-blue-500 font-medium"
+              data-modal-target="projectDetailModal"
+              data-title="Hybrid Recommendation System"
+              data-image="pictures/hybrid_recomendation.png"
+              data-repo="https://github.com/naubass/AI-Agent-Smart-Campus-Library"
+              data-tech='["Python", "PyTorch", "Pandas", "Streamlit", "Scikit-learn"]'
+              data-description="AI-powered recommendation engine combining collaborative filtering and content-based methods. 
+              Developed using Python, PyTorch, Pandas, Streamlit, and Scikit-learn. Deployed on Streamlit Cloud.">
+              View Details →
+          </button>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg overflow-hidden group 
+                  hover:shadow-xl transform transition duration-300 hover:scale-105 relative" data-aos="zoom-in">
+        <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-200 dark:bg-blue-300 rounded-full blur-2xl opacity-40 -z-10"></div>
+        <img src="pictures/CBT Chatbot.png" alt="Project 2" 
+             class="w-full h-48 object-cover transition duration-300 group-hover:scale-110">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Telegram CBT Chatbot</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            A chatbot using MLP Neural Network, Sentence Transformer & LLM with LangChain - LangGraph for cognitive behavioral therapy sessions on Telegram.
+          </p>
+
+          <!-- Tech Stack Tags -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" 
+                  class="w-5 h-5" alt="Python">
+              Python
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" 
+                  class="w-5 h-5" alt="PyTorch">
+              PyTorch
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/langchain-color.png" 
+                  class="w-5 h-5" alt="LangChain">
+              LangChain
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/gemini-color.png" 
+                  class="w-5 h-5" alt="Gemini">
+              Gemini
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://telegram.org/img/t_logo.png" 
+                  class="w-5 h-5" alt="Telegram">
+              Telegram
+            </span>
+          </div>
+          <button
+              class="open-modal-btn inline-block text-blue-400 hover:text-blue-500 font-medium"
+              data-modal-target="projectDetailModal"
+              data-title="Telegram CBT Chatbot"
+              data-image="pictures/CBT Chatbot.png"
+              data-repo="https://github.com/naubass/AI-Agent-Smart-Campus-Library"
+              data-tech='["Python", "PyTorch", "LangChain", "Gemini", "Telegram"]'
+              data-description="A chatbot using MLP Neural Network, Sentence Transformer & LLM with LangChain - LangGraph for cognitive behavioral therapy sessions on Telegram.
+              Developed using Python, PyTorch, LangChain, Gemini, and Telegram Bot API.">
+              View Details →
+          </button>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg overflow-hidden group 
+                  hover:shadow-xl transform transition duration-300 hover:scale-105 relative" data-aos="zoom-in">
+        <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-200 dark:bg-blue-300 rounded-full blur-2xl opacity-40 -z-10"></div>
+        <img src="pictures/image Holi-Rang.png" alt="Project 3" 
+             class="w-full h-48 object-cover transition duration-300 group-hover:scale-110">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Holi-Rang Website</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            Modern responsive tourism website showcasing destinations, Chat Features for Customers, Payment with Midtrans and booking features.
+          </p>
+
+          <!-- Tech Stack Tags -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" 
+                  class="w-5 h-5" alt="Laravel">
+              Laravel
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" 
+                  class="w-5 h-5" alt="PHP">
+              PHP
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" 
+                  class="w-5 h-5" alt="MySQL">
+              MySQL
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
+                  class="w-5 h-5" alt="JavaScript">
+              JavaScript
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" 
+                  class="w-5 h-5" alt="Tailwind CSS">
+              Tailwind CSS
+            </span>
+          </div>
+          <button
+              class="open-modal-btn inline-block text-blue-400 hover:text-blue-500 font-medium"
+              data-modal-target="projectDetailModal"
+              data-title="Holi-Rang Website"
+              data-image="pictures/image Holi-Rang.png"
+              data-repo="https://github.com/naubass/pariwisatatangerang.git"
+              data-tech='["Laravel", "PHP", "MySQL", "JavaScript", "Tailwind CSS"]'
+              data-description="Modern responsive tourism website showcasing destinations, Chat Features for Customers, Payment with Midtrans and booking features.
+              Developed using Laravel, PHP, MySQL, JavaScript, and Tailwind CSS.">
+              View Details →
+          </button>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg overflow-hidden group 
+                  hover:shadow-xl transform transition duration-300 hover:scale-105 relative" data-aos="zoom-in">
+        <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-200 dark:bg-blue-300 rounded-full blur-2xl opacity-40 -z-10"></div>
+        <img src="pictures/lovio.png" alt="Project 3" 
+             class="w-full h-48 object-cover transition duration-300 group-hover:scale-110">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Lovio Rent-A Girlfriend</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+             A playful platform where users can “rent” a girlfriend or boyfriend for fun chats, dates, and lighthearted experiences — all in a modern, responsive design.
+          </p>
+
+          <!-- Tech Stack Tags -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" 
+                  class="w-5 h-5" alt="Laravel">
+              Laravel
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" 
+                  class="w-5 h-5" alt="PHP">
+              PHP
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" 
+                  class="w-5 h-5" alt="MySQL">
+              MySQL
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
+                  class="w-5 h-5" alt="JavaScript">
+              JavaScript
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" 
+                  class="w-5 h-5" alt="Tailwind CSS">
+              Tailwind CSS
+            </span>
+          </div>
+          <button
+              class="open-modal-btn inline-block text-blue-400 hover:text-blue-500 font-medium"
+              data-modal-target="projectDetailModal"
+              data-title="Lovio Rent-A Girlfriend"
+              data-image="pictures/lovio.png"
+              data-repo="https://github.com/naubass/Lovio-Rental-Pacar.git"
+              data-tech='["Laravel", "PHP", "MySQL", "JavaScript", "Tailwind CSS"]'
+              data-description="A playful platform where users can “rent” a girlfriend or boyfriend for fun chats, dates, and lighthearted experiences — all in a modern, responsive design.
+              Developed using Laravel, PHP, MySQL, JavaScript, and Tailwind CSS.">
+              View Details →
+          </button>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg overflow-hidden group 
+                  hover:shadow-xl transform transition duration-300 hover:scale-105 relative" data-aos="zoom-in">
+        <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-200 dark:bg-blue-300 rounded-full blur-2xl opacity-40 -z-10"></div>
+        <img src="pictures/fr2.png" alt="Project 3" 
+             class="w-full h-48 object-cover transition duration-300 group-hover:scale-110">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Face Recognition App</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            A face recognition application using Pytorch FaceNet and machine learning algorithms for accurate identification and verification.
+          </p>
+
+          <!-- Tech Stack Tags -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" 
+                  class="w-5 h-5" alt="Python">
+              Python
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" 
+                  class="w-5 h-5" alt="PyTorch">
+              PyTorch
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" 
+                  class="w-5 h-5" alt="FastAPI">
+              FastAPI
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" 
+                  class="w-5 h-5" alt="Docker">
+              Docker
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" 
+                  class="w-5 h-5" alt="Streamlit">
+              Streamlit
+            </span>
+          </div>
+          <button
+              class="open-modal-btn inline-block text-blue-400 hover:text-blue-500 font-medium"
+              data-modal-target="projectDetailModal"
+              data-title="Face Recognition App"
+              data-image="pictures/fr2.png"
+              data-repo="https://github.com/naubass/Face-Recognition-App.git"
+              data-tech='["Python", "PyTorch", "FastAPI", "Docker", "Streamlit"]'
+              data-description="A face recognition application using Pytorch FaceNet and machine learning algorithms for accurate identification and verification.
+              Developed using Python, PyTorch, FastAPI, Docker, and Streamlit.">
+              View Details →
+          </button>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg overflow-hidden group 
+                  hover:shadow-xl transform transition duration-300 hover:scale-105 relative" data-aos="zoom-in">
+        <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-200 dark:bg-blue-300 rounded-full blur-2xl opacity-40 -z-10"></div>
+        <img src="pictures/Detect-Anomalies.png" alt="Project 3" 
+             class="w-full h-48 object-cover transition duration-300 group-hover:scale-110">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Wi-Fi Hybrid Anomaly Detection</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            Anomaly detection system for Wi-Fi networks using Isolation Forest and Robust Scaler models for data preprocessing.
+          </p>
+
+          <!-- Tech Stack Tags -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" 
+                  class="w-5 h-5" alt="Python">
+              Python
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" 
+                  class="w-5 h-5" alt="Pandas">
+              Pandas
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.prod.website-files.com/65264f6bf54e751c3a776db1/66d86935aaeb8c0b9fa1bde7_scikit-learn.png" 
+                  class="w-5 h-5" alt="Scikit-learn">
+              Scikit-learn
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" 
+                  class="w-5 h-5" alt="Matplotlib">
+              Matplotlib
+            </span>
+          </div>
+          <button
+              class="open-modal-btn inline-block text-blue-400 hover:text-blue-500 font-medium"
+              data-modal-target="projectDetailModal"
+              data-title="Wi-Fi Hybrid Anomaly Detection"
+              data-image="pictures/Detect-Anomalies.png"
+              data-repo="https://github.com/naubass/Wi-Fi-Domain-Hybrid-Anomaly-Detection.git"
+              data-tech='["Python", "Pandas", "Scikit-learn", "Matplotlib"]'
+              data-description="Anomaly detection system for Wi-Fi networks using Isolation Forest and Robust Scaler models for data preprocessing.
+              Developed using Python, Pandas, Scikit-learn, and Matplotlib.">
+              View Details →
+          </button>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg overflow-hidden group 
+                  hover:shadow-xl transform transition duration-300 hover:scale-105 relative" data-aos="zoom-in">
+        <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-200 dark:bg-blue-300 rounded-full blur-2xl opacity-40 -z-10"></div>
+        <img src="pictures/e-course.png" alt="Project 3" 
+             class="w-full h-48 object-cover transition duration-300 group-hover:scale-110">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">E-Course Website</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            An e-learning platform with Laravel backend, course management system, and interactive learning features for a seamless learning experience, payment integration, and user authentication.
+          </p>
+
+          <!-- Tech Stack Tags -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" 
+                  class="w-5 h-5" alt="Laravel">
+              Laravel
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" 
+                  class="w-5 h-5" alt="PHP">
+              PHP
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" 
+                  class="w-5 h-5" alt="MySQL">
+              MySQL
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
+                  class="w-5 h-5" alt="JavaScript">
+              JavaScript
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" 
+                  class="w-5 h-5" alt="Tailwind CSS">
+              Tailwind CSS
+            </span>
+          </div>
+          <button
+              class="open-modal-btn inline-block text-blue-400 hover:text-blue-500 font-medium"
+              data-modal-target="projectDetailModal"
+              data-title="E-Course Website"
+              data-image="pictures/e-course.png"
+              data-repo="https://github.com/naubass/E-Course-Website.git"
+              data-tech='["Laravel", "PHP", "MySQL", "JavaScript", "Tailwind CSS"]'
+              data-description="An e-learning platform with Laravel backend, course management system, and interactive learning features for a seamless learning experience, payment integration, and user authentication.
+              Developed using Laravel, PHP, MySQL, JavaScript, and Tailwind CSS.">
+              View Details →
+          </button>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg overflow-hidden group 
+                  hover:shadow-xl transform transition duration-300 hover:scale-105 relative" data-aos="zoom-in">
+        <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-200 dark:bg-blue-300 rounded-full blur-2xl opacity-40 -z-10"></div>
+        <img src="pictures/c-profile.png" alt="Project 3" 
+             class="w-full h-48 object-cover transition duration-300 group-hover:scale-110">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Company Profile</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            A modern company profile website built with Laravel, showcasing services, portfolio, and contact features with a sleek design and responsive layout.
+          </p>
+
+          <!-- Tech Stack Tags -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" 
+                  class="w-5 h-5" alt="Laravel">
+              Laravel
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" 
+                  class="w-5 h-5" alt="PHP">
+              PHP
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
+                  class="w-5 h-5" alt="JavaScript">
+              JavaScript
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" 
+                  class="w-5 h-5" alt="Tailwind CSS">
+              Tailwind CSS
+            </span>
+          </div>
+          <button
+              class="open-modal-btn inline-block text-blue-400 hover:text-blue-500 font-medium"
+              data-modal-target="projectDetailModal"
+              data-title="Company Profile"
+              data-image="pictures/c-profile.png"
+              data-repo="https://github.com/naubass/PT.-Lintang-Songo-Teknik.git"
+              data-tech='["Laravel", "PHP", "JavaScript", "Tailwind CSS"]'
+              data-description="A modern company profile website built with Laravel, showcasing services, portfolio, and contact features with a sleek design and responsive layout.
+              Developed using Laravel, PHP, JavaScript, and Tailwind CSS.">
+              View Details →
+          </button>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg overflow-hidden group 
+                  hover:shadow-xl transform transition duration-300 hover:scale-105 relative" data-aos="zoom-in">
+        <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-200 dark:bg-blue-300 rounded-full blur-2xl opacity-40 -z-10"></div>
+        <img src="pictures/RAG - WA Chatbot.png" alt="Project 3" 
+             class="w-full h-48 object-cover transition duration-300 group-hover:scale-110">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Whatsapp Chatbot - RAG</h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            A WhatsApp chatbot using Retrieval-Augmented Generation (RAG) with LangChain and LLMs to provide intelligent responses based on retrieved documents.
+          </p>
+
+          <!-- Tech Stack Tags -->
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" 
+                  class="w-5 h-5" alt="Python">
+              Python
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://cdn.worldvectorlogo.com/logos/twilio.svg" 
+                  class="w-5 h-5" alt="PyTorch">
+              Twilio
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/langchain-color.png" 
+                  class="w-5 h-5" alt="LangChain">
+              LangChain
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/gemini-color.png" 
+                  class="w-5 h-5" alt="Gemini">
+              Gemini
+            </span>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full"
+                  style="background-color:#e5e7eb; color:#111827;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1022px-WhatsApp.svg.png" 
+                  class="w-5 h-5" alt="WhatsApp">
+              Whatsapp
+            </span>
+          </div>
+          <button
+              class="open-modal-btn inline-block text-blue-400 hover:text-blue-500 font-medium"
+              data-modal-target="projectDetailModal"
+              data-title="Whatsapp Chatbot - RAG"
+              data-image="pictures/RAG - WA Chatbot.png"
+              data-repo="https://github.com/naubass/WA_Chatbot_Twilio.git"
+              data-tech='["Python", "Twilio", "LangChain", "Gemini", "WhatsApp"]'
+              data-description="A WhatsApp chatbot using Retrieval-Augmented Generation (RAG) with LangChain and LLMs to provide intelligent responses based on retrieved documents.
+              Developed using Python, Twilio, LangChain, Gemini, and WhatsApp.">
+              View Details →
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" 
+  class="py-20 
+         bg-gradient-to-br from-blue-50 via-white to-purple-50 
+         dark:from-gray-900 dark:via-gray-800 dark:to-blue-900">
+  <div class="container mx-auto px-6">
+
+    <!-- Section Title -->
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-blue-400 dark:text-gray-100 mb-4">
+        My Services
+      </h2>
+      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        I provide professional services in web development, design, and AI solutions tailored to your needs.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Service Card -->
+      <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg p-8 text-center 
+                  hover:shadow-xl transform transition duration-300 hover:scale-105" data-aos="zoom-in">
+        <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full 
+                    bg-blue-100 dark:bg-blue-900 text-blue-500">
+          💻
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Web Development</h3>
+        <p class="text-gray-600 dark:text-gray-400">
+          Building modern, responsive, and scalable websites with a focus on performance and user experience.
+        </p>
+      </div>
+
+      <!-- Service Card -->
+      <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg p-8 text-center 
+                  hover:shadow-xl transform transition duration-300 hover:scale-105" data-aos="zoom-in">
+        <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full 
+                    bg-purple-100 dark:bg-purple-900 text-purple-500">
+          🤖
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">AI Solutions</h3>
+        <p class="text-gray-600 dark:text-gray-400">
+          Developing AI-powered applications like chatbots, recommendation systems, and automation tools.
+        </p>
+      </div>
+
+      <!-- Service Card -->
+      <div class="bg-white dark:bg-gray-950 rounded-2xl shadow-lg p-8 text-center 
+                  hover:shadow-xl transform transition duration-300 hover:scale-105" data-aos="zoom-in">
+        <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full 
+                    bg-blue-100 dark:bg-blue-900 text-blue-500">
+          📊
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">Machine Learning</h3>
+        <p class="text-gray-600 dark:text-gray-400">
+          Building AI-powered solutions that learn from data to predict, recommend, and automate processes.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Animasi CSS -->
+<style>
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.tech-card {
+  @apply bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 w-40 flex flex-col items-center transition duration-300 hover:shadow-xl hover:scale-105;
+}
+.tech-card h3 {
+  @apply text-gray-800 dark:text-gray-200 font-semibold text-sm;
+}
+</style>
+
+<!-- Certificates Section -->
+<section id="certificates" class="py-20 bg-gray-100 dark:bg-gray-950">
+  <div class="container mx-auto px-6">
+
+    <!-- Title -->
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-blue-400 dark:text-white">Certificates</h2>
+      <p class="text-gray-600 dark:text-gray-400 mt-2">Some of my certifications and achievements</p>
+    </div>
+
+    <!-- Certificate Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Certificate Card -->
+      <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md hover:shadow-xl transition overflow-hidden"
+        data-aos="zoom-in" data-aos-delay="100">
+        <img src="pictures/smmc.png" alt="Certificate" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">RevoU Software Engineering Mini-Course</h3>
+          <p class="text-gray-600 dark:text-gray-400 mt-2">RevoU | Completed: 4 July 2025</p>
+        </div>
+      </div>
+
+      <!-- Certificate Card -->
+      <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md hover:shadow-xl transition overflow-hidden" 
+        data-aos="zoom-in" data-aos-delay="100">
+        <img src="pictures/llm.png" alt="Certificate" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">LLM Based-Tools and AI Agent with Gemini API Integration for Data Scientist</h3>
+          <p class="text-gray-600 dark:text-gray-400 mt-2">Hacktiv8 | Completed: 31 August 2025</p>
+        </div>
+      </div>
+
+      <!-- Certificate Card -->
+      <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md hover:shadow-xl transition overflow-hidden"
+        data-aos="zoom-in" data-aos-delay="100">
+        <img src="pictures/bwa.png" alt="Certificate" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Create an online course website with Laravel</h3>
+          <p class="text-gray-600 dark:text-gray-400 mt-2">Build With Angga | Completed: 04 March 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tech Stack Section -->
+<section id="techstack" class="py-20 bg-gray-50 dark:bg-gray-900">
+  <div class="container mx-auto px-6">
+
+    <!-- Title -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Tech Stack & Tools</h2>
+      <p class="text-gray-600 dark:text-gray-400 mt-2">Tools, frameworks, and technologies I use</p>
+    </div>
+
+    <!-- Marquee Wrapper -->
+    <div class="relative overflow-hidden">
+      <div class="flex gap-6 animate-marquee">
+
+        <!-- Laravel -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" class="w-12 h-12 mb-3" alt="Laravel">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Laravel</h3>
+        </div>
+
+        <!-- PHP -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="w-12 h-12 mb-3" alt="PHP">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">PHP</h3>
+        </div>
+
+        <!-- Python -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-12 h-12 mb-3" alt="Python">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Python</h3>
+        </div>
+
+        <!-- PyTorch -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" class="w-12 h-12 mb-3" alt="PyTorch">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">PyTorch</h3>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-12 h-12 mb-3" alt="JavaScript">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">JavaScript</h3>
+        </div>
+
+        <!-- HTML5 -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-12 h-12 mb-3" alt="HTML5">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">HTML5</h3>
+        </div>
+
+        <!-- Tailwind -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="w-12 h-12 mb-3" alt="TailwindCSS">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">TailwindCSS</h3>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="w-12 h-12 mb-3" alt="Bootstrap">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Bootstrap</h3>
+        </div>
+
+        <!-- Docker -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="w-12 h-12 mb-3" alt="Docker">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Docker</h3>
+        </div>
+
+        <!-- Git -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-12 h-12 mb-3" alt="Git">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Git</h3>
+        </div>
+
+        <!-- GitHub -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-12 h-12 mb-3" alt="GitHub">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">GitHub</h3>
+        </div>
+
+        <!-- PostgreSQL -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="w-12 h-12 mb-3" alt="PostgreSQL">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">PostgreSQL</h3>
+        </div>
+
+        <!-- MySQL -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-12 h-12 mb-3" alt="MySQL">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">MySQL</h3>
+        </div>
+
+        <!-- Pandas -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" class="w-12 h-12 mb-3" alt="Pandas">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Pandas</h3>
+        </div>
+
+        <!-- NumPy -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" class="w-12 h-12 mb-3" alt="NumPy">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">NumPy</h3>
+        </div>
+
+        <!-- Matplotlib -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" class="w-12 h-12 mb-3" alt="Matplotlib">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Matplotlib</h3>
+        </div>
+
+        <!-- Jupyter -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" class="w-12 h-12 mb-3" alt="Jupyter">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Jupyter</h3>
+        </div>
+
+        <!-- vite -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://vitejs.dev/logo.svg" class="w-12 h-12 mb-3" alt="Vite">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Vite</h3>
+        </div>
+
+        <!-- VS Code -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="w-12 h-12 mb-3" alt="VS Code">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">VS Code</h3>
+        </div>
+
+        <!-- FastAPI -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" class="w-12 h-12 mb-3" alt="Notion">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">FastAPI</h3>
+        </div>
+
+        <!-- Streamlit -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" class="w-12 h-12 mb-3" alt="Streamlit">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Streamlit</h3>
+        </div>
+
+        <!-- Laravel -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" class="w-12 h-12 mb-3" alt="Laravel">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Laravel</h3>
+        </div>
+
+        <!-- PHP -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="w-12 h-12 mb-3" alt="PHP">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">PHP</h3>
+        </div>
+
+        <!-- Python -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-12 h-12 mb-3" alt="Python">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Python</h3>
+        </div>
+
+        <!-- PyTorch -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" class="w-12 h-12 mb-3" alt="PyTorch">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">PyTorch</h3>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-12 h-12 mb-3" alt="JavaScript">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">JavaScript</h3>
+        </div>
+
+        <!-- HTML5 -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-12 h-12 mb-3" alt="HTML5">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">HTML5</h3>
+        </div>
+
+        <!-- Tailwind -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="w-12 h-12 mb-3" alt="TailwindCSS">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">TailwindCSS</h3>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="w-12 h-12 mb-3" alt="Bootstrap">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Bootstrap</h3>
+        </div>
+
+        <!-- Docker -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="w-12 h-12 mb-3" alt="Docker">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Docker</h3>
+        </div>
+
+        <!-- Git -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-12 h-12 mb-3" alt="Git">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Git</h3>
+        </div>
+
+        <!-- GitHub -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-12 h-12 mb-3" alt="GitHub">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">GitHub</h3>
+        </div>
+
+        <!-- PostgreSQL -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="w-12 h-12 mb-3" alt="PostgreSQL">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">PostgreSQL</h3>
+        </div>
+
+        <!-- MySQL -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-12 h-12 mb-3" alt="MySQL">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">MySQL</h3>
+        </div>
+
+        <!-- Pandas -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" class="w-12 h-12 mb-3" alt="Pandas">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Pandas</h3>
+        </div>
+
+        <!-- NumPy -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" class="w-12 h-12 mb-3" alt="NumPy">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">NumPy</h3>
+        </div>
+
+        <!-- Matplotlib -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" class="w-12 h-12 mb-3" alt="Matplotlib">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Matplotlib</h3>
+        </div>
+
+        <!-- Jupyter -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" class="w-12 h-12 mb-3" alt="Jupyter">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Jupyter</h3>
+        </div>
+
+        <!-- vite -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://vitejs.dev/logo.svg" class="w-12 h-12 mb-3" alt="Vite">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Vite</h3>
+        </div>
+
+        <!-- VS Code -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="w-12 h-12 mb-3" alt="VS Code">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">VS Code</h3>
+        </div>
+
+        <!-- FastAPI -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" class="w-12 h-12 mb-3" alt="Notion">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">FastAPI</h3>
+        </div>
+
+        <!-- Streamlit -->
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md w-40 p-4 flex flex-col items-center hover:shadow-xl hover:-translate-y-1 transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" class="w-12 h-12 mb-3" alt="Streamlit">
+          <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">Streamlit</h3>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" 
+  class="py-20 
+         bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300 
+         text-gray-800 relative">
+  <div class="container mx-auto px-6">
+
+    <!-- Accent Glow -->
+    <div class="absolute -top-10 -right-10 w-72 h-72 bg-blue-400/30 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-blue-400/30 rounded-full blur-3xl"></div>
+    
+    <!-- Section Title -->
+    <div class="text-center mb-12 relative z-10">
+      <h2 class="text-3xl font-bold text-white mb-4">
+        Contact Me
+      </h2>
+      <p class="text-lg text-white max-w-2xl mx-auto">
+        Let’s work together or just have a chat! Feel free to reach out through this form or my socials below.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
+      
+      <!-- Contact Info -->
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">Email</h3>
+          <p class="text-gray-700">naufalnajmi04@gmail.com</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">Phone</h3>
+          <p class="text-gray-700">+62 856-8886-713</p>
+        </div>
+        <!-- Socials -->
+        <div>
+        <h3 class="text-xl font-semibold text-blue-900 mb-2">Socials</h3>
+        <div class="flex space-x-6">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/naufal-najmi-kardiansyah-a11908271/" target="_blank" class="text-blue-700 hover:text-blue-900 transition flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" 
+                viewBox="0 0 24 24" class="w-6 h-6">
+                <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.77 2.65 4.77 6.1V24h-4v-7.9c0-1.9-.03-4.35-2.65-4.35-2.66 0-3.07 2.08-3.07 4.2V24h-4V8z"/>
+            </svg>
+            <span>LinkedIn</span>
+            </a>
+            
+            <!-- GitHub -->
+            <a href="https://github.com/naubass" target="_blank" class="text-blue-700 hover:text-blue-900 transition flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" 
+                viewBox="0 0 24 24" class="w-6 h-6">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 
+                0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 
+                0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61 
+                -.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.084-.729.084-.729 
+                1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305 
+                3.492.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 
+                0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 
+                0 0 1.005-.322 3.3 1.23a11.52 11.52 0 0 1 3-.404c1.02.005 2.045.138 3 
+                .404 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 
+                3.176.765.84 1.23 1.91 1.23 3.22 
+                0 4.61-2.805 5.625-5.475 5.92.435.372.81 1.102.81 2.222 
+                0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57 
+                C20.565 22.092 24 17.592 24 12.297 
+                c0-6.627-5.373-12-12-12"/>
+            </svg>
+            <span>GitHub</span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/naubass.music/" target="_blank" class="text-blue-700 hover:text-blue-900 transition flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" 
+                viewBox="0 0 24 24" class="w-6 h-6">
+                <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm4.5 3.5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2A3 3 0 1 0 12 15a3 3 0 0 0 0-6zm4.75-.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0z"/>
+            </svg>
+            <span>Instagram</span>
+            </a>
+        </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form action="https://api.web3forms.com/submit" method="POST" 
+          class="bg-white/60 backdrop-blur-lg p-8 rounded-2xl shadow-lg space-y-6 border border-blue-300/40">
+          
+          <input type="hidden" name="access_key" value="11a475a8-1426-4cc0-b8f8-61d4ad8cb641">
+          
+          <input type="hidden" name="subject" value="Pesan Baru dari Portofolio Anda">
+
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          
+          <div>
+              <label for="name" class="block text-gray-900 mb-2">Your Name</label>
+              <input type="text" id="name" name="name" required
+                  class="w-full px-4 py-3 rounded-lg border border-blue-200 bg-white/80 text-gray-800 focus:ring-2 focus:ring-blue-400 outline-none">
+          </div>
+
+          <div>
+              <label for="email" class="block text-gray-900 mb-2">Email Address</label>
+              <input type="email" id="email" name="email" required
+                  class="w-full px-4 py-3 rounded-lg border border-blue-200 bg-white/80 text-gray-800 focus:ring-2 focus:ring-blue-400 outline-none">
+          </div>
+
+          <div>
+              <label for="message" class="block text-gray-900 mb-2">Message</label>
+              <textarea id="message" name="message" rows="4" required
+                  class="w-full px-4 py-3 rounded-lg border border-blue-200 bg-white/80 text-gray-800 focus:ring-2 focus:ring-blue-400 outline-none"></textarea>
+          </div>
+
+          <button type="submit"
+              class="w-full bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-600 transition">
+              Send Message
+          </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-6 bg-gray-100 dark:bg-gray-900 text-center">
+  <p class="text-gray-600 dark:text-gray-400">
+    © 2025 Naufal Najmi Kardiansyah. All rights reserved.
+  </p>
+</footer>
+
+<div id="projectDetailModal" tabindex="-1" aria-hidden="true" 
+     class="hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-full 
+            bg-gray-900/20 backdrop-blur-md">
+
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <div class="relative bg-white rounded-2xl shadow-xl dark:bg-gray-900">
+            
+            <div class="flex justify-end p-2 absolute top-0 right-0 z-10">
+                <button type="button" 
+                    class="close-modal-btn text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 
+                           rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center 
+                           dark:hover:bg-gray-600 dark:hover:text-white">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+
+            <div class="p-6 md:p-8 overflow-y-auto" style="max-height: 90vh;">
+                <img id="modalImage" src="" alt="Project Image" 
+                     class="w-full h-auto rounded-lg shadow-md mb-6">
+
+                <h3 id="modalTitle" 
+                    class="text-3xl font-bold text-gray-900 dark:text-white mb-4"></h3>
+
+                <div id="modalTechStack" 
+                     class="flex flex-wrap gap-3 mb-6"></div>
+
+                <h4 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                    About This Project
+                </h4>
+                <p id="modalDescription" class="text-gray-600 dark:text-gray-400 mb-8"></p>
+
+                <div class="flex flex-wrap items-center gap-4">
+                    <a id="modalRepoLink" href="#" target="_blank" rel="noopener noreferrer" 
+                       class="inline-flex items-center justify-center gap-2 px-5 py-2.5 
+                              text-sm font-medium text-white bg-gray-900 rounded-lg 
+                              hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300
+                              dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" />
+                        </svg>
+                        <span>View Repository</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: "ease-in-out",
+    once: true
+  });
+</script>
+
+<!-- Mobile Menu Toggle -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const techLogos = {
+                'python': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+                'pytorch': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg',
+                'pandas': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg',
+                'streamlit': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg',
+                'scikit-learn': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png',
+                'laravel': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg',
+                'php': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+                'css': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+                'tailwind css': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
+                'javascript': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+                'mysql': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+                'next.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+                'typescript': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+                'prisma': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg',
+                'react': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+                'postgresql': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+                'fastapi': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg',
+                'langchain': 'https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/langchain-color.png',
+                'gemini': 'https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/gemini-color.png',
+                'telegram': 'https://telegram.org/img/t_logo.png',
+                'whatsapp': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1022px-WhatsApp.svg.png',
+                'docker': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+                'matplotlib': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg',
+                'twilio': 'https://cdn.worldvectorlogo.com/logos/twilio.svg',
+                // Format: 'nama-teknologi-lowercase': 'url-ke-logo.svg',
+            };
+            
+            const modal = document.getElementById('projectDetailModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalTechStack = document.getElementById('modalTechStack');
+            const modalDescription = document.getElementById('modalDescription');
+            const modalRepoLink = document.getElementById('modalRepoLink');
+    
+            const openModal = (button) => {
+                if (!modal || !button) return;
+    
+                const title = button.dataset.title;
+                const image = button.dataset.image;
+                const description = button.dataset.description;
+                const repo = button.dataset.repo;
+                let tech = [];
+                try {
+                    tech = JSON.parse(button.dataset.tech);
+                } catch (e) {
+                    console.error("Error parsing data-tech attribute:", button.dataset.tech, e);
+                }
+    
+                modalImage.src = image;
+                modalImage.alt = title + " Project Image";
+                modalTitle.textContent = title;
+                modalDescription.textContent = description;
+                modalRepoLink.href = repo;
+    
+                modalTechStack.innerHTML = '';
+                if (Array.isArray(tech)) {
+                    tech.forEach(techName => {
+                    const tag = document.createElement('span');
+                    tag.className = 'inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded-full bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200';
+                    
+                    // Cari URL logo dari kamus (dibuat case-insensitive)
+                    const logoUrl = techLogos[techName.toLowerCase()];
+                    
+                    let tagContent = '';
+                    // Jika logo ditemukan, buat tag <img>
+                    if (logoUrl) {
+                        tagContent += `<img src="${logoUrl}" alt="${techName} logo" class="w-4 h-4">`;
+                    }
+                    
+                    // Tambahkan nama teknologinya
+                    tagContent += techName;
+                    
+                    // Masukkan konten ke dalam tag span
+                    tag.innerHTML = tagContent;
+                    modalTechStack.appendChild(tag);
+                    });
+                }
+    
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.classList.add('overflow-hidden');
+            };
+    
+            const closeModal = () => {
+                if (!modal) return;
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.classList.remove('overflow-hidden');
+            };
+    
+            document.querySelectorAll('.open-modal-btn').forEach(button => {
+                button.addEventListener('click', () => openModal(button));
+            });
+    
+            document.querySelectorAll('.close-modal-btn').forEach(button => {
+                button.addEventListener('click', closeModal);
+            });
+    
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) closeModal();
+            });
+    
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
